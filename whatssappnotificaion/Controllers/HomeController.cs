@@ -110,6 +110,8 @@ namespace whatssappnotificaion.Controllers
         public static string GetLocalIpAddress()
         {
             UnicastIPAddressInformation mostSuitableIp = null;
+
+
             var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
             foreach (var network in networkInterfaces)
             {
